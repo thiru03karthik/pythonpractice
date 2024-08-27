@@ -135,3 +135,22 @@ Grocery2.reverse()
 
 print(Grocery1)
 print(Grocery2)'''
+
+#mutable - can be chnage - []
+text =["A", "B", "C", "D", "E", "F"]
+text[1]=4
+text[2]=7
+text[3]=9
+text[5]=10
+print(text)
+
+#immutable - connot be change - ()
+text1=(1,2,3,4,5,6)
+text1=(1)
+print(text1)
+
+#number change 
+a=12
+b=17
+a,b=b,a
+print(a,b)
