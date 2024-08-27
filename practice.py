@@ -2,8 +2,8 @@
 # Get score for 100
 # Divide 100/10
 
-
-'''print("Enter your name")
+'''
+print("Enter your name")
 name=str(input())
 print("Enter your score")
 score=int(input())
@@ -20,7 +20,7 @@ print("my name is", name, "\nmy score is", score/10, "/10", "\nmy department is"
 a=50
 b=50
 c=a+b
-print(100*str(c))'''
+print(100*str(c))
 
 # calculator project
 
@@ -36,7 +36,7 @@ print(100*str(c))'''
 # Calculator project
 
 # Get the first number from the user
-'''print("Enter the first number:")
+print("Enter the first number:")
 var1 = int(input())
 
 # Get the operator from the user
@@ -117,7 +117,7 @@ offer= products[products.rindex("|")+2:]
 print("product name:", name)
 print("Product price:", price)
 print("Product variant:", variant)
-print("Enjoy the",offer)'''
+print("Enjoy the",offer)
 
 #list python
 
@@ -134,4 +134,4 @@ Grocery2.sort()
 Grocery2.reverse()
 
 print(Grocery1)
-print(Grocery2)
+print(Grocery2)'''
