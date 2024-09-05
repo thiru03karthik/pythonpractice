@@ -86,26 +86,61 @@ else:
 
 
 #Make a mini calculator
-get input for 2 numbers a and b
+get input for 2 numbers a and br
 get input from user whether to add/sub/mul/div
-if user select add then add the two number and print the result'''
+if user select add then add the two number and print the result
 
 print("Calculator is Now Open, Enter the Sum")
-
 a=int(input("Enter the first numbers:"))
 operators= input("Enter the operator:")
 b=int(input("Enter the Second number:"))
 
 
 if(operators=="+"):
-    print(a+b)
+    print("the sum =", a+b)
 elif(operators=="-"):
-    print(a-b)
+    print("the sum =", a-b)
 elif(operators=="*"):
-    print(a*b)
+    print("the sum =", a*b)
 elif(operators=="/"):
-    print(a/b)
+    print("the sum =", a/b)
 elif(operators=="%"):
-    print(a%b)
+    print("the sum =", a%b)
 elif(operators=="**"):
-    print(a**b)
+    print("the sum =", a**b)
+    
+#get a input for score percentage. only if the percentage is greater than 70, get input for his name, department and location. then print you are elgibile. if not print you are not eligible.
+
+
+score = int(input("Enter the score:"))
+
+if(score>=70)and (score<100):
+    print("your eligible, enter your details (we wont spam your data)")
+    name = str(input("Enter your Name:"))
+    dept = str(input("Enter your Department:"))
+    location = str(input("Enter your Location:"))
+    print("Thank you for your response")
+
+else:
+    print("your are not elgible")
+
+
+#get input for salary and age
+#1) if salary greater than or equal to 20000 or age leses than or equal to 25, get input for required loan amount. if not print you are not eligible for loan
+#2) if required loan amount is less than or equal to 50000 print you are eligible for loan. if it is greater than 50000 print maximum loan amount is 50000
+
+salary = int(input("Enter your Salary: "))
+age = int(input("Enter your age: "))
+
+if(salary>=20000) or (age<=25 and age>=44):
+    loanamount = int(input("Enter loan amount:"))
+    if(loanamount>=50000) and (loanamount<=25000):
+        print("maximum loan amount is 50000")
+    else:
+        print("you are eligible for loan")
+        print("thank you for your response, we will reachout you asap!")
+
+else:
+    print("You are not eligible for loan, let try again")'''
+    
+#
