@@ -143,4 +143,4 @@ if(salary>=20000) or (age<=25 and age>=44):
 else:
     print("You are not eligible for loan, let try again")'''
     
-#
+print("karthikp")
