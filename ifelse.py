@@ -142,5 +142,12 @@ if(salary>=20000) or (age<=25 and age>=44):
 
 else:
     print("You are not eligible for loan, let try again")'''
-    
-print("karthikp")
+
+
+print("Enter Your age")
+age = int(input())
+
+if(age>=18):
+    print("You are eligible for driving licence")
+else:
+    print("Your not eligible")    
