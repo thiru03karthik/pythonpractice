@@ -34,9 +34,10 @@ while(i>0):
     '''
 #write a program to find the factorial numbers
 
-i = 3
+i = 10
 fact = 1
 while(i>0):
     fact=fact*i
+
     i=i-1
 print(fact)
