@@ -31,7 +31,7 @@ i = 20
 while(i>0):
     print(i, end=" |")
     i=i-1
-    '''
+
 #write a program to find the factorial numbers
 
 i = 10
@@ -41,3 +41,18 @@ while(i>0):
 
     i=i-1
 print(fact)
+
+
+#Nexted While loop
+
+'''
+i = 1
+
+while i<=5:
+    print("Karthik", end=" |" )
+    k = 1
+    while k<=1:
+        print(" Digital marketing expert", end=" ")
+        k=k+1
+    i=i+1
+    print()
