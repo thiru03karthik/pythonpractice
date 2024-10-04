@@ -228,7 +228,6 @@ t2 = teacher("Kishore", "1313131")
 
 t2.display()
 
-'''
 
 #create a class claled calculator 
 #create 2 vaiables a and b
@@ -258,3 +257,121 @@ sum1.add()
 sum1.sub()
 sum1.mul()
 sum1.div()
+
+
+#Inheritance and its type
+
+class product():
+    def laptop(self):
+        print("Product Name: Mac Book Pro")
+        
+class models():
+    def modelType(self):
+        print("Model: 13'inch, M2 Chip Processor, 256gb Storage.")
+        
+class shop(product, models): #multiple inhertance(code1, code2)
+    def name(self):
+        print("Shop Name: Apple store")
+
+applestore = shop()
+
+applestore.name()
+applestore.laptop()
+applestore.modelType()
+
+    
+#multiple level inheritance
+
+class grandpa():
+    def phone(self):
+        print("Apple phone")
+
+class dad (grandpa):
+    def money(self):
+        print("200k with cash")
+
+class son (dad):
+    def laptop(self):
+        print("MacBook Pro M3")
+
+Karthik =son()
+Karthik.laptop()
+Karthik.money()
+Appa = dad()
+Appa.phone()
+
+Karthik.phone()
+
+#Hyranking Inheritance
+
+class dad():
+    def money(self):
+        print("Dad's Cash")
+
+class son1(dad):
+    pass
+class son2(dad):
+    pass
+class son3(dad):
+    pass
+
+
+s2=son2()
+s2.money()
+
+#Hybrid Inheritance
+
+class dad():
+    def money(self):
+        print("Dad's Cash")
+        
+class land():
+    def property(self):
+        print("3 yeckor land")
+        
+class doc1(dad):
+    pass
+class doc2(dad):
+    pass
+class son(dad, land):
+    pass
+
+
+child3 = son()
+
+child3.money()
+child3.property()
+
+
+#super keyword
+
+
+class a():
+    
+    def __init__(self):
+        print("A")
+        
+    def display(self):
+        print("Your are in class a")
+        
+class b():
+    def __init__(self):
+        super().__init__()
+        print("B")
+        
+    def display(self):
+        print("Your are in class b")
+        
+class c(b,a): #considering left side
+    def __init__(self):
+        super().__init__()
+        print("C")
+        
+    def display(self):
+        print("Your are in class C")
+    
+object1 = c()
+
+'''
+
+#Polymorphism in python
