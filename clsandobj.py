@@ -372,6 +372,143 @@ class c(b,a): #considering left side
     
 object1 = c()
 
-'''
 
 #Polymorphism in python
+#the word polymorphism means having many forms. in programming, polymorphism
+#means the same function name(but different signatures) being used for different
+#types. the key difference is the data types and number of arguments used in funtion
+
+def karthik():
+    print("Im digital marketing professor")
+    
+karthik()
+
+
+
+
+def sum(a,b, c=0):
+    print(a+b+c)
+
+sum(1,2)
+sum(3,4,-5)
+
+class animal():
+    def sounds(self):
+        print("Animal make a sound")
+
+class dog(animal):
+    def sounds(self):
+        print("dogs barks")
+
+d1=dog()
+
+d1.sounds()
+
+
+class shape():
+    def area(self):
+        return 0
+
+class rectangle(shape):
+    def area(self):
+        a=12
+        b=1456
+        print(a*b) 
+
+r1=rectangle()
+r1.area()
+
+class person():
+    def __init__(self,name):
+        self.name=name
+class student(person):
+    def __init__(self,name,grade):
+        super().__init__(name)
+        self.grade=grade
+        
+    def display(self):
+        print(self.name, self.grade)
+
+s1=student("karthik", "A+")
+s1.display()
+
+
+#create a base class called vehicle with a method start() that print
+ #"vehiicle started". create a derived class called car that inherits from 
+ #vehicle and overrides the stats() method to print "car started".
+ 
+class vehicle():
+    def start(self):
+        print("Vehicle Started")
+
+class car(vehicle):
+    def start(self):
+        print("Car Started")
+        
+c1 = vehicle()
+c1.start()
+
+
+#create a base class called empployee with properties name and salary. create a derived class called manager
+#that inherits from employee and adds a property department.
+#write a method in manager to display the name, salary and department of the manager.
+
+class Employee():
+    def __init__(self, name, salary):
+        self.name=name
+        self.salary=salary
+
+class Manager(Employee):
+    def __init__(self, name, salary,deparment):
+        super().__init__(name, salary)
+        self.department=deparment
+    
+    def display(self):
+        print(self.name, self.salary, self.department)
+        
+m1 = Manager("John", 50000, "CSE")
+m1.display()
+
+
+#Encapsulation (important topic thi represent object )
+
+# self.companynam - public (everyone can change data)
+# self.__companynam - private (No one can change data)
+# self._companynam - Protected (can change data with child class)
+
+
+class company():
+    def __init__(self):
+        self._companyname="google"
+        
+    # def companyname(self):
+    #     print(self.__companyname)
+    
+c1 = company()
+# c1.companyname()
+print(c1._companyname)
+
+
+#Exception Handling (How to handle run time error)
+
+# compile time error
+
+
+# print("abcd")
+# print("abcde")
+#printt("abcdef") #name error = compile time error | syntax error
+
+#logical error 
+
+a= 20
+b=40
+print(a+a) #logical error 
+
+# run time error'''
+
+try:
+    a=int(input())
+    b=int(input())
+    print(a+b)
+except Exception as e:
+    print("somthing", e) 
